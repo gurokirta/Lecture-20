@@ -47,15 +47,20 @@
 // Task #4
 
 var number_array = [2, 121, 4341, 242, 562, 43, 182, 55, 32, 98, 326]; //11
-var counter = 0;
 
-for (var i = 0; i <= number_array[i]; i++) {
-  if (number_array[i] % i === 0) {
-    console.log(number_array[i]);
-    // console.log(`item index ${i} and number ${number_array[i]} `);
+for (var i = 0; i < number_array.length; i++) {
+  var counter = 0;
+
+  for (var j = 1; j <= number_array[i]; j++) {
+    if (number_array[i] % j === 0) {
+      counter++;
+      console.log(`${j}`);
+    }
   }
-  //   console.log(number_array[i] + number_array[i]);
+  console.log(`${number_array[i]} index  -> გამყოფების რაოდენობა ${counter} `);
 }
+
+// console.log(counter);
 
 // console.log(counter);
 // array1.forEach(element => console.log(element));
